@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    transform: translateX(50%);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #f0a3a3;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 20px;
+    height: 30px; 
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    height: 35px;
+}
+
+.top .back {
+    position: absolute;
+    left: 0;
+    padding: 8px 20px;
+}
+
+.top .back i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.top .profil {
+    position: absolute;
+    right: 0;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px 8px 20px;
+}
+
+.top .profil img {
+    margin-left: 8px;
+    height: 30px; 
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.button:hover {
+    background-color: #dc1a1a;
+    color: white;
+    transition: 0.2s;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-conversations {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.message h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.message p {
+    margin: 5px 0;
+}
+
+.message .date {
+    font-size: 0.8em;
+    color: #999;
+}
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.link-conv {
+    text-decoration: none;
+    color: black;
+}
+
+.conversation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.conversation img {
+    max-height: 50px;
+}
+
+.conversation p {
+    width: 100%;
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.link-conv:hover .conversation p {
+    background-color: #f4f4f9;
+    transition: 0.2s;
+}
+
+.italic-opacity {
+    font-style: italic;
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+.formulaire {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#message {
+    flex: 1;
+    border: none;
+    background-color: #ecd9d9;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+.input-submit {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #f0a3a3;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.input-submit:hover {
+    background-color: #dc1a1a;
+    color: white;
+    transition: 0.2s;
+}

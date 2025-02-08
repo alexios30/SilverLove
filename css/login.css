@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Toute la fenetre (les deux rectangles rouge et blanches) */
+.container {
+  display: flex;
+}
+
+.partie-gauche {
+  /* Le fond de la partie gauche */
+  width: 60vw;
+  height: 100vh;
+  background-color: #f0a3a3;
+
+  /* Position des élements de la partie gauche */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partie-gauche img {
+  width: 200px;
+}
+
+.partie-droite {
+  width: 40vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Pour placer le texte */
+  position: relative;
+}
+
+/* Le conteneur du titre */
+.titre {
+  background-color: #ecd9d9;
+  position: absolute;
+  border-radius: 50px;
+  padding: 0 5rem;
+  top: 3.5rem;
+  left: -4rem;
+}
+
+/* Le titre */
+.titre h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Le style du formulaire */
+.partie-droite .formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container i {
+  margin-right: 10px;
+  font-size: 27px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #777;
+}
+
+.input {
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-size: 18px;
+}
+
+.error-message p {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.input-submit {
+  color: #f4f4f4;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  background-color: #7aa95c;
+  font-size: 15px;
+}
+
+.input-submit:hover {
+  cursor: pointer;
+}
+
+.formulaire a {
+  color: #000;
+  opacity: 40%;
+  font-size: 15px;
+}
